@@ -79,13 +79,13 @@
 
                 if (document.getElementById(curr_small).className == "small box-empty"){
                     if (moves%2 == 0){
-                        const img1=`<img src="static//cross.png">`
+                        const img1=`<img src="static/cross.png">`
                         $(`#${curr_small}`).append(img1);
                         document.getElementById(curr_small).className="small box-cross";
                         document.getElementById("parent").style.backgroundColor="lightblue";
                     }
                     else{
-                        const img1=`<img src="static//not.png">`
+                        const img1=`<img src="static/not.png">`
                         $(`#${curr_small}`).append(img1);
                         document.getElementById(curr_small).className="small box-not";
                         document.getElementById("parent").style.backgroundColor="red";
@@ -115,7 +115,7 @@
                 
                 reset=`<a class="reset" href="index.html"></a>`;
                 $("#big5").append(reset);
-                $(".reset").append(`<img src="static//playagain.png">`)
+                $(".reset").append(`<img src="static/playagain.png">`)
 
             }
             /**/
